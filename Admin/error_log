@@ -1,0 +1,24 @@
+[01-Dec-2022 13:36:45 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DIYAH, S.Hum.','aisyahns@gmail.com','f7c3bc1d808e04732adf679965ccc34ca7ae3441',N' at line 1 in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php:69
+Stack trace:
+#0 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php(69): mysqli_query(Object(mysqli), 'INSERT INTO tb_...')
+#1 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/index.php(281): include('/home/kreasin3/...')
+#2 {main}
+  thrown in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php on line 69
+[01-Dec-2022 13:37:01 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DIYAH, S.Hum.','aisyahns@gmail.com','f7c3bc1d808e04732adf679965ccc34ca7ae3441',N' at line 1 in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php:69
+Stack trace:
+#0 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php(69): mysqli_query(Object(mysqli), 'INSERT INTO tb_...')
+#1 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/index.php(281): include('/home/kreasin3/...')
+#2 {main}
+  thrown in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php on line 69
+[01-Dec-2022 13:37:39 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DIYAH, S.Hum.','aisyahns@gmail.com','f7c3bc1d808e04732adf679965ccc34ca7ae3441',N' at line 1 in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php:69
+Stack trace:
+#0 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php(69): mysqli_query(Object(mysqli), 'INSERT INTO tb_...')
+#1 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/index.php(281): include('/home/kreasin3/...')
+#2 {main}
+  thrown in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php on line 69
+[01-Dec-2022 13:38:34 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DIYAH, S.Hum.','aisyahns@gmail.com','f7c3bc1d808e04732adf679965ccc34ca7ae3441',N' at line 1 in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php:69
+Stack trace:
+#0 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php(69): mysqli_query(Object(mysqli), 'INSERT INTO tb_...')
+#1 /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/index.php(281): include('/home/kreasin3/...')
+#2 {main}
+  thrown in /home/kreasin3/e-learn.kreasinusantara.co.id/Admin/modul/guru/add_guru.php on line 69
