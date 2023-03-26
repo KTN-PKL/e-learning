@@ -60,8 +60,7 @@ Daftar Nilai
           <h4 class="card-title">
         <a href="../Report/nilai/nilai_perkelas.php?ujian=<?=$_GET['ujian']; ?>&kelas=<?=$_GET['kelas']; ?>&jurusan=<?=$_GET['jurusan']; ?>" target="_blank" class="btn btn-dark text-white text-right"> <i class="fa fa-print text-white"></i> Print</a>
 
-        <a href="../Guru/export.php?ID=<?=$_GET['ujian']; ?>" target="_blank" class="btn btn-success text-white text-right"> <i class="fa fa-file-excel-o text-white"></i> Export to Excell</a>
-          </h4>
+        <a href="../Guru/export.php?ID=<?=$_GET['ujian']; ?>" target="_blank" class="btn btn-success text-white text-right"> <i class="fa fa-file-excel-o text-white"></i> Export to Excell</a>          </h4>
           <div class="table-responsive">
 
 
@@ -112,8 +111,8 @@ Daftar Nilai
 </div>
 
 <?php
-$tampil = mysqli_query($con, "SELECT * FROM tb_siswa WHERE id_kelas='$_GET[kelas]' AND id_jurusan='$_GET[jurusan]' ORDER BY nama_siswa ASC");
-while($r=mysqli_fetch_array($tampil)){
+$detail = mysqli_query($con, "SELECT * FROM tb_siswa WHERE id_kelas='$_GET[kelas]' AND id_jurusan='$_GET[jurusan]' ORDER BY nama_siswa ASC");
+while($r=mysqli_fetch_array($detail)){
     $id = $_GET['ujian'].",".$r['id_siswa'];
 ?>
        <!-- Modal -->
@@ -167,7 +166,6 @@ while($r=mysqli_fetch_array($tampil)){
                             <ol type="A" style='font-size: 13px;'>    
                             <?php 
                             $l=$r['id_soal'];
-                            
                             for($i=1; $i<=5; $i++){ 
                             $kolom = "pilihan_$i";
                             if($i==$jwbn[$l]){
@@ -179,8 +177,31 @@ while($r=mysqli_fetch_array($tampil)){
                             }
 
                             ?>
+                            
                            
                             </ol>
+            
+                            <?php
+                             switch ($r['kunci']) {
+                            case '1':
+                             $key = "A";
+                             break;
+                            case '2':
+                                $key = "B";
+                            break;
+                            case '3':
+                              $key = "c";
+                            break;
+                            case '4':
+                              $key = "D";
+                            break;
+                            case '5':
+                              $key = "E";
+                            break;
+                            }
+                            echo "Kunci Jawaban : ".$key
+                            ?>
+                         
                             <?php } 
                             
                             ?>
